@@ -1,0 +1,216 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>College Gallery</title>
+  
+  
+  <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+
+  <style>
+    .gallery-item {
+      position: relative;
+      overflow: hidden;
+      border-radius: 10px;
+    }
+
+    .gallery-item img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      transition: transform 0.3s ease;
+    }
+
+    .gallery-item:hover img {
+      transform: scale(1.1);
+    }
+
+    .gallery-caption {
+      position: absolute;
+      bottom: 0;
+      left: 0;
+      right: 0;
+      padding: 10px;
+      background: rgba(0, 0, 0, 0.5);
+      color: white;
+      text-align: center;
+      opacity: 0;
+      transition: opacity 0.3s ease;
+    }
+
+    .gallery-item:hover .gallery-caption {
+      opacity: 1;
+    }
+    footer {
+      background-color: #343a40;
+      color: white;
+      padding: 40px 0;
+    }
+    footer .social-icons a {
+      color: white;
+      margin: 0 10px;
+      font-size: 1.5rem;
+      transition: color 0.3s ease;
+    }
+    footer .social-icons a:hover {
+      color: #f0ad4e;
+    }
+    footer .footer-links a {
+      color: white;
+      margin: 0 15px;
+      font-size: 1rem;
+      text-decoration: none;
+    }
+    footer .footer-links a:hover {
+      color: #f0ad4e;
+    }
+  </style>
+</head>
+<body>
+  <nav class="navbar navbar-expand-lg navbar-light bg-light shadow-sm">
+    <div class="container-fluid">
+      <a class="navbar-brand" href="#">Tilottama Campus</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav ms-auto">
+          <li class="nav-item">
+            <a class="nav-link active" aria-current="page" href="bankai.html">Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="new1.html">About Us</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="new2.html">Admissions</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="new3.html">Courses</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="new4.html">Contact</a>
+          </li>
+          <li class="nav-item">
+          <a class="nav-link" href="new5.html">Gallery</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <div class="container my-5">
+    <h2 class="text-center mb-4">College Gallery</h2>
+    <div class="row">
+      
+      <div class="col-lg-4 col-md-6 mb-4">
+        <div class="gallery-item">
+          <img src="ttcc3.jpg" alt="Campus 1">
+          <div class="gallery-caption">
+            <h5>Students and Campus</h5>
+            <p>Campus Aerial View</p>
+          </div>
+        </div>
+      </div>
+      
+      
+      <div class="col-lg-4 col-md-6 mb-4">
+        <div class="gallery-item">
+          <img src="ttcc2.jpg" alt="Campus 2">
+          <div class="gallery-caption">
+            <h5>Colllege Gate</h5>
+            <p>Students arriving at College Gate</p>
+          </div>
+        </div>
+      </div>
+
+      
+      <div class="col-lg-4 col-md-6 mb-4">
+        <div class="gallery-item">
+          <img src="ttcc5.jpg" alt="Campus 3">
+          <div class="gallery-caption">
+            <h5>Club & Games</h5>
+            <p>Pubg Tournament Organized by BBA</p>
+          </div>
+        </div>
+      </div>
+
+      
+      <div class="col-lg-4 col-md-6 mb-4">
+        <div class="gallery-item">
+          <img src="bridge.jpg" alt="Campus 4">
+          <div class="gallery-caption">
+            <h5>Visit Session</h5>
+            <p>Students from Bridgecourse visiting Tilottama Campus PostSEE</p>
+          </div>
+        </div>
+      </div>
+
+     
+      <div class="col-lg-4 col-md-6 mb-4">
+        <div class="gallery-item">
+          <img src="tour2080.jpg" alt="Campus 5">
+          <div class="gallery-caption">
+            <h5>Educational Tour</h5>
+            <p>Glimpse of Educational Tour 2080</p>
+          </div>
+        </div>
+      </div>
+
+      
+      <div class="col-lg-4 col-md-6 mb-4">
+        <div class="gallery-item">
+          <img src="tour2081.jpg" alt="Campus 6">
+          <div class="gallery-caption">
+            <h5>Educational Tour</h5>
+            <p>Glimpse of Educational Tour 2081</p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+
+    <div class="col-lg-4 col-md-6 mb-4">
+      <div class="gallery-item">
+        <img src="portrait.jpg" alt="Campus 6">
+        <div class="gallery-caption">
+          <h5>Portrait</h5>
+          <p>Portrait of Campus by Our Student</p>
+        </div>
+      </div>
+    </div>
+  </div>
+  </div>
+  <footer class="text-center">
+    <div class="container">
+      <div class="row mb-4">
+        <div class="col-12">
+          <h4 class="text-white">Follow Us</h4>
+          <div class="social-icons">
+            <a href="#" class="bi bi-facebook">F</a>
+            <a href="#" class="bi bi-twitter">T</a>
+            <a href="#" class="bi bi-linkedin">L</a>
+            <a href="#" class="bi bi-instagram">I</a>
+          </div>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-12 footer-links">
+          <a href="#">Privacy Policy</a>
+          <a href="#">Terms of Service</a>
+          <a href="#">Contact</a>
+        </div>
+      </div>
+      <div class="row mt-4">
+        <div class="col-12">
+          <p class="text-white">&copy; 2025 Tilottama Campus. All Rights Reserved.</p>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.2/dist/umd/popper.min.js"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+</html>
